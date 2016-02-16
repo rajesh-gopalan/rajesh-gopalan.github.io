@@ -90,7 +90,12 @@ h2 {
     text-decoration: bold;
 }
 
-.project-text {
+.project-body-text {
+    text-align: justify;
+    text-decoration: bold;
+}
+
+.project-href-text {
     text-align: center;
 }
 
