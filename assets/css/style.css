@@ -1,0 +1,130 @@
+body {
+    background: #A9C4EC;
+    margin: 0
+}
+
+.site-header {
+    text-decoration: none;
+    font-size: 28px;
+    color: #444444;
+}
+
+.container {
+    display: table;
+    width: 980px;
+    margin: 0 auto; /* Centered */
+    background: #FFFFFF;
+}
+
+.header {
+    /* Center the header */
+    /* Order is: top right bottom left */
+    padding: 45px 0 45px 260px;
+    /* Border around the header */
+    border: 2px solid black;
+    font-family: 'Noto Serif', serif;
+}
+
+.header a:hover {
+    color: #A9C4EC;
+}
+
+.menu {
+    background: #246DF3;
+    /* Right-align the Menu */
+    /* Order is: top right bottom left */
+    padding: 5px 0 5px 920px;
+}
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+}
+
+.menu a:hover {
+    color: #A9C4EC;
+}
+
+aside {
+    /* Foat left and 120 px wide */
+    float: left;
+    width: 120px;
+    /* Order is: top right bottom left */
+    padding: 10px 0 10px 40px;
+}
+
+h1 {
+    margin: 0px;
+    color: #000000;
+    font-size: 18px;
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+}
+
+h2 {
+    color: #246DF3;
+    font-size: 15px;
+    /* Order is: top right bottom left */
+    margin: 20px 0 5px 0;
+}
+
+.project {
+    /* Order is: top right bottom left */
+    margin: 0 0 0 0;
+    padding: 35px 40px 30px 0;
+    color: #444444;
+/*    font-family: "Arial", "Myriad Pro";*/
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.project a:hover {
+    color: #A9C4EC;
+}
+
+.project-num-text {
+    text-align: justify;
+    text-decoration: bold;
+}
+
+.project-text {
+    text-align: center;
+}
+
+.link-text {
+    display: inline;
+}
+
+.project-image {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    /* Order is: top right bottom left */
+    padding: 6px 40px 6px 350px;
+    background: #D6D6D6;
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode";
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0A46CE;
+}
+
+footer a:hover {
+    color: #A9C4EC;
+}
+
+.separator {
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
