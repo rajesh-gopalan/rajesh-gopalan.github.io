@@ -1,7 +1,7 @@
 
 # An advertiser conducted a randomized experiment (A/B test) using cities as the unit of measure, half the cities got the ads and half didn’t.  Now the advertiser wants to measure the return on ad spend (ROAS). ROAS is calculated as:
 # ROAS = Total Incremental Sales / Total Advertising Spend
-# Example - An ROAS of 3 indicates that the advertiser made $2 in sales for every $1 in ad spend.
+# Example - An ROAS of 3 indicates that the advertiser made $3 in sales for every $1 in ad spend.
 
 # The A/B test lasted 30 days.  Daily sales by city for 60 days prior to the test and for the 30 days during the test is provided.  The ad spend for each day is provided as well (there was no advertising before the test started).  10,000 cities were randomly chosen and randomly assigned to a test group (5000) and control group (5000).
 
@@ -129,7 +129,7 @@ lmSumm(lm.4.Results)
 # Observations:
 # 1. As expected cost.clicks and pretest sales are both statistically significant (p-value < 0.01) at the 1% level.
 # 2. $1 increase in ad spend lifts sales by $2.96.
-# So, the incremental lift in sales for $1 increase in ad spend = $2.96, all else remaining the same.  In industry terms, the ROAS is approximately 299.  This means that the advertiser got back **almost 2x the ad spend**.  The industry benchmark for ROAS is close to 260, so this adveriser has a 15% better ROAS!
+# So, the incremental lift in sales for $1 increase in ad spend = $2.96, all else remaining the same.  In industry terms, the ROAS is approximately 296.  This means that the advertiser got back **almost 3x the ad spend**.  The industry benchmark for ROAS is close to 260, so this adveriser has a 15% better ROAS!
 
 # Now let's look at the confidence interval of the ROAS:
 confint(lm.4.Results, level = 0.99)
