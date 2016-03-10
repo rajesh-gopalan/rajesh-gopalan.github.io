@@ -121,7 +121,7 @@ colnames(agg.df1.pre)[colnames(agg.df1.pre) == 'sales']   <- 'sales.pre'
 colnames(agg.df1.test)[colnames(agg.df1.test) == 'sales'] <- 'sales.test'
 agg.df1.combined <- merge_recurse(list(agg.df1.pre, agg.df1.test))
 
-# The understanding here is that the aggregate of cost.clicks provides the aggregate of the *actual ad spend in the test phase minus the ad spend in the pre-test phase*.  Since there was no advertising in the pre-test phase, the regression coefficient of the aggregate of ad spend would directly give us the incremental lift in ad spend, i.e. ROAS.  Now, its time to run the regression.
+# The understanding here is that the aggregate of cost.clicks provides the aggregate of the *actual ad spend in the test phase minus the ad spend in the pre-test phase*.  Since there was no advertising in the pre-test phase, the regression coefficient of the aggregate of ad spend would directly give us the incremental lift in sales from the ad spend, i.e. ROAS.  Now, its time to run the regression.
 lm.4.Results <- lm(data = agg.df1.combined,
                    sales.test ~ sales.pre + cost.clicks
                    )
