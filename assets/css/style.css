@@ -5,6 +5,7 @@ body {
 
 .site-header {
     text-decoration: none;
+    margin: 0 auto; /* Centered */
     font-size: 28px;
     color: #444444;
 }
